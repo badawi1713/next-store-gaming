@@ -1,0 +1,23 @@
+{
+  "name": "gaming-store-service",
+  "version": "1.0.0",
+  "description": "Servis sebagai server untuk aplikasi gaming store",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "npm",
+    "store",
+    "mern"
+  ],
+  "author": "dzaky.badawi@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
