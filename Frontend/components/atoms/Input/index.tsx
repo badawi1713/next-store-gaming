@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 interface InputProps {
-    label?: string;
+  label?: string;
 }
 
-const Input = ({label, ...nativeProps}: Partial<InputProps>) => {
+const Input = ({ label, ...nativeProps }: Partial<InputProps>) => {
   return (
     <>
       <label
@@ -19,8 +19,8 @@ const Input = ({label, ...nativeProps}: Partial<InputProps>) => {
         id="name"
         name="name"
         aria-describedby="name"
-              placeholder="Enter your name"
-              {...nativeProps} //props default yang ada pada sebuah elemen input seperti onChange, dll
+        placeholder="Enter your name"
+        {...nativeProps} //props default yang ada pada sebuah elemen input seperti onChange, dll
       />
     </>
   );

@@ -66,6 +66,14 @@ yarn create-next-app [nama_projek] --typescript
 - components/organism: untuk 1 grouping komponen/section, bersifat independen, bisa ditambahkan logic dan state di dalamnya
 - kemudian semuanya digabungkan dalam pages
 
+### Storybook
+
+- Mengumpulkan/mendokumentasikan komponen yang sudah dibuat untuk design system
+- yarn storybook (perintah untuk menjalankan storybook)
+- Buka folder stories,
+- *Styling untuk story, sesungguhnya styling yang baik untuk style berbasis komponen adalah styling yg terisolasi hanya untuk komponen tersebut
+- Untuk setup Global styling di storybook: *jika menggunakan library seperti bootstrap dan googlefonts, CDNnya dapat disimpan di file preview-head.html, kemudian untuk global stylenya import css di file preview.js, lalu restart storybook dan jalankan kembali
+
 ## Library yang Digunakan
 
 - Storybook
