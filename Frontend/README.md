@@ -52,6 +52,33 @@ yarn create-next-app [nama_projek] --typescript
 - Tambahkan rule berikut pada key rules di file eslintrc.json: "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx", ".ts", ".tsx"]}]
 - Eslint supaya kode yang diketik rapi, terstruktur, dan standar
 
+### Konversi HTML ke React
+
+- File HTML terdapat di assets
+- HTML dikoneversi sebagai pages, kemudian dipecah menjadi komponen-komponen yang dapat di-reuse
+
+### Struktur Desain Atomik
+
+- Alasan: untuk memecah komponen menjadi lebih terstruktur dan mudah untuk di-maintenance
+- Membuat folder "components" di root projek
+- components/atom: komponen terkecil, dan dibuat apabila digunakan >= 2 kali
+- components/molecule: sekumpulan komponen atom
+- components/organism: untuk 1 grouping komponen/section, bersifat independen, bisa ditambahkan logic dan state di dalamnya
+- kemudian semuanya digabungkan dalam pages
+
+### Storybook
+
+- Mengumpulkan/mendokumentasikan komponen yang sudah dibuat untuk design system
+- yarn storybook (perintah untuk menjalankan storybook)
+- Buka folder stories,
+- *Styling untuk story, sesungguhnya styling yang baik untuk style berbasis komponen adalah styling yg terisolasi hanya untuk komponen tersebut
+- Untuk setup Global styling di storybook: *jika menggunakan library seperti bootstrap dan googlefonts, CDNnya dapat disimpan di file preview-head.html, kemudian untuk global stylenya import css di file preview.js, lalu restart storybook dan jalankan kembali
+
+## Library yang Digunakan
+
+- Storybook
+- Classnames: untuk dapat memberikan kondisi/logic pada className/styling
+
 ## Memulai Aplikasi
 
 Menjalankan aplikasi:
